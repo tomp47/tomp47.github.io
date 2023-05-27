@@ -1,5 +1,5 @@
 main{
     height: 100vh;
     width: 100vw;
-    background: url(highlights.png) no-repeat right top, url(hockeystats.png) no-repeat right bottom, url(mainBackround.png);
+    background: url(highlights.png) no-repeat right top, url(hockeystats.png) no-repeat right bottom, url(mainBackround.png) no-repeat;
 }
