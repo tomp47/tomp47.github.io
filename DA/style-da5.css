@@ -3,5 +3,4 @@ main{
     width: 100vw;
     background: url(highlights.png) no-repeat right top, url(hockeystats.png) no-repeat right bottom, url(mainBackround.png) no-repeat;
     background-size: auto, auto, cover;
-    
 }
