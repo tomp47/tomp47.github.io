@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 4px solid rgb(97, 119, 136);
+}
+
+#header h1 {
+    margin: 0;
+    color: black;
+}
+
+.climber{
+    width: 50px;
+    height: auto;
+    padding-left: 50px;
+}
+
+.snowboarder{
+    width: 80px;
+    height: auto;
+}
+
+#bio {
+    
+    padding: 20px;
+    margin: 80px auto;
+    width: 60%; 
+    text-align: center;
+    box-shadow: 0 0 20px Black;
+    border-radius: 10%;
+}
+
+
+#bio h3 {
+    margin-top: 0;
+    padding: 20px;
+    font-size: 25px; 
+}
+
+#bio p {
+    margin-bottom: 10px;
+    font-size: 22px; 
+}
+
+#tabs {
+    list-style-type: none;
+    margin: 20px;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+#tabs li {
+    margin-bottom: 10px;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 5px black;
+}
+
+#photo {
+    position: absolute;
+    top: 265px;
+    left: 50px;
+}
+
+#photo img {
+    width: 200px; 
+    height: auto;
+    border-radius: 50%; 
+}
+
+#quote {
+    
+    padding: 20px;
+    margin: 80px auto;
+    text-align: center; 
+    padding-top: 30px;
+    width: 60%;
+    text-align: center;
+
+}
+
+#quote p {
+    font-size: 25px; 
+    font-style: italic;
+    color: grey;
+}
+
+@media only screen and (max-width: 600px) {
+    #photo {
+        margin-top: 10px;
+    }
+
+    #photo img {
+        width: 50px;
+        height: auto;
+    }
+    
+    #bio {
+        width: 80%; 
+    }
+
+    #header h1{
+        font-size: 20px;
+
+    }
+    #tabs{
+        font-size: 20px;
+
+    }
+    
+    #bio h3 {
+        font-size: 20px;
+    }
+    
+    #bio p {
+        font-size: 18px;
+    }
+}
