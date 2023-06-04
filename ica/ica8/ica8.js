@@ -1,6 +1,7 @@
 const btn = document.querySelector("#button");
 // console.log(btn)
 const paragraph = document.querySelector("p");
+const  color;
 
 
 btn.onclick = () => {
