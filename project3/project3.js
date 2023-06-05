@@ -1,5 +1,6 @@
 let currentVolume = 50;
 let sliderCount = 1;
+let activeSliderCount = 1; // Initialize with 1 active slider
 
 function changeVolume(slider) {
   const sliderValue = slider.value;
@@ -29,7 +30,8 @@ function generateSliders() {
     slider.disabled = true;
   });
 
-  const activeSliderIndex = Math.floor(Math.random() * sliders.length); 
+  const activeSliderIndex = Math.floor(Math.random() * activeSliderCount); // Generate a random index between 0 and activeSliderCount - 1
+  console.log(activeSliderIndex);
 
   for (let i = 0; i < 3; i++) {
     const newSliderId = `volume-slider-${++sliderCount}`;
@@ -40,16 +42,16 @@ function generateSliders() {
     newSlider.min = "0";
     newSlider.max = "100";
     newSlider.value = "50";
-    newSlider.onchange = function() {changeVolume(this);};
+    newSlider.onchange = function() { changeVolume(this); };
 
     if (i === activeSliderIndex) {
       newSlider.classList.add('active-slider');
       newSlider.disabled = false;
+      activeSliderCount++; // Increment the activeSliderCount when adding a new active slider
     }
 
     container.appendChild(newSlider);
   }
 }
-
 
 updateCurrentVolume();
