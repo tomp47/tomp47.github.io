@@ -29,7 +29,7 @@ function generateSliders() {
     slider.disabled = true;
   });
 
-  const activeSliderIndex = Math.floor(Math.random() * sliders.length); // Randomly pick one slider
+  const activeSliderIndex = Math.floor(Math.random() * sliders.length); 
 
   for (let i = 0; i < 3; i++) {
     const newSliderId = `volume-slider-${++sliderCount}`;
@@ -40,7 +40,7 @@ function generateSliders() {
     newSlider.min = "0";
     newSlider.max = "100";
     newSlider.value = "50";
-    newSlider.onchange = function() { changeVolume(this); };
+    newSlider.onchange = function() {changeVolume(this);};
 
     if (i === activeSliderIndex) {
       newSlider.classList.add('active-slider');
@@ -51,5 +51,5 @@ function generateSliders() {
   }
 }
 
-// Initial update of the current volume
+
 updateCurrentVolume();
