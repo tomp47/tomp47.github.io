@@ -1,6 +1,6 @@
 let currentVolume = 50;
 let sliderCount = 1;
-let activeSliderCount = 1; // Initialize with 1 active slider
+let activeSliderCount = 1;
 
 function changeVolume(slider) {
   const sliderValue = slider.value;
@@ -30,7 +30,7 @@ function generateSliders() {
     slider.disabled = true;
   });
 
-  const activeSliderIndex = Math.floor(Math.random() * activeSliderCount); // Generate a random index between 0 and activeSliderCount - 1
+  const activeSliderIndex = Math.floor(Math.random() * activeSliderCount); 
   console.log(activeSliderIndex);
 
   for (let i = 0; i < 3; i++) {
@@ -47,7 +47,7 @@ function generateSliders() {
     if (i === activeSliderIndex) {
       newSlider.classList.add('active-slider');
       newSlider.disabled = false;
-      activeSliderCount++; // Increment the activeSliderCount when adding a new active slider
+      activeSliderCount++; 
     }
 
     container.appendChild(newSlider);
