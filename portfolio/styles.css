@@ -1,99 +1,108 @@
-/* Reset some default styles */
-body, h1, h2, h3, p, ul, li, form {
-    margin: 0;
-    padding: 0;
+html, body{
+	font-size:16px;
+	color: #dfdfdf;
+	background-color: #063647; 
 }
 
-body {
-    font-family: "Arial", sans-serif;
-    background-color: #f7f7f7;
-    line-height: 1.6;
+a {
+  color: #00d1b2;
 }
 
-header {
-    text-align: center;
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
+a:hover {
+  color: #00d1b2;
 }
 
-header h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 10px;
+section{
+	padding-top: 3rem;
+	padding-bottom: 3rem;
 }
 
-header p {
-    font-size: 1.2rem;
+.section-1 {
+	background: #063647;
 }
 
-nav {
-    text-align: center;
-    background-color: #444;
-    padding: 10px;
+.section-2 {
+	background-color: #052D3D;
 }
 
-nav ul {
-    list-style: none;
+.section-3 {
+	background-color: #0E282E;
 }
 
-nav li {
-    display: inline;
-    margin: 0 20px;
+.section-4 {
+	background-color: #063647;
+	padding: 0.2rem;
 }
 
-section {
-    padding: 20px;
-    background-color: #fff;
-    margin: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+a.nav-item {
+	color: #dfdfdf;
 }
 
-section h2 {
-    font-size: 1.8rem;
-    margin-bottom: 20px;
+a.nav-item:hover {
+	color: #fff;
 }
 
-.project {
-    margin-bottom: 20px;
+.avatar{
+	height:200px;
+	border-radius: 50%;
 }
 
-.project img {
-    max-width: 100%;
+.intro-description{
+	padding-top: 1rem;
 }
 
-form label {
-    font-weight: 700;
-    margin-bottom: 5px;
-    display: block;
+.social-container img{
+	max-width:100%;
+	max-height:175px;
+	margin-bottom:15px;
 }
 
-form input[type="text"],
-form input[type="email"],
-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+.project-figure {
+	margin: 0 auto 1rem auto;
+	max-height: 256px;
+	max-width: 256px;
 }
 
-form button {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    cursor: pointer;
+.project-text {
+	text-align: justify;
 }
 
-/* Add media queries for responsive design if needed */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2rem;
-    }
-    header p {
-        font-size: 1rem;
-    }
+.box {
+	background-color: transparent;
+	border: 2px solid rgba(7, 59, 79, 0.5);
+}
+
+.title {
+	color: #fff;
+	text-align: left;
+	margin-bottom: 2rem;
+}
+
+.intro {
+	text-align: justify;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.void-background {
+	background-color: transparent; 
+}
+
+@media screen and (max-width: 768px) {
+	.nav-menu {
+		background-color: #063647;
+	}
+
+	.nav-toggle:hover {
+		background-color: transparent;
+	}
+
+	.nav-toggle span {
+		background-color: #dfdfdf;
+	}
+
+	.nav-toggle span:hover {
+		background-color: #fff;
+	}
+
 }

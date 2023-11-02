@@ -1,6 +1,11 @@
-// You can add JavaScript functionality here, such as form submission handling.
-document.getElementById("contact-form").addEventListener("submit", function(event) {
-    event.preventDefault();
-    // Handle form submission, e.g., send data to a server or show a confirmation message.
-    alert("Form submitted!");
-});
+window.onload = () => {
+    const navMenu = document.querySelector('.nav-menu');
+    const navItems = document.querySelectorAll('.nav-item');
+    const hamburger = document.querySelector('.nav-toggle');
+    
+    const toggle = e => e.classList.toggle('is-active');
+    const toggleNav = ({ target }) => Array.from(navMenu.classList).includes('is-active') ? toggle(navMenu) : null;
+  
+    hamburger.addEventListener('click', () => toggle(navMenu, 'is-active'));
+    Array.from(navItems).forEach(e => e.addEventListener('click', toggleNav));
+  }
